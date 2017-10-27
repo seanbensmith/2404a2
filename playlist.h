@@ -15,7 +15,7 @@ class Playlist {
     	string toString() const;
 	
 	private:
-	string title;
+	string name;
 	int id;
 };
 
