@@ -12,13 +12,13 @@ Recording::Recording(const string & aTitle, const string & anArtist, const int  
 	producer = aProducer;
 	id = anID;
 }
-Recodring::~Recording(){
+Recording::~Recording(){
 	cout << "~Song(void)" << this << endl;
 }
 int Recording::getID(){return id;}
 
 string Recording::toString()const{
-	return to_string(id) + " " + title + " " artist + " " + year + " " + producer;
+	return to_string(id) + " " + title + " " artist + " " + to_string(year) + " " + producer;
 }
 
 ostream & operator<<(ostream & out, const Recording & aRecording){
