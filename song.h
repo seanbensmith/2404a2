@@ -11,9 +11,11 @@ class Song {
 	public:
 	Song(const string & aTitle, const string & aComposer, const int anId = -1);
 	~Song(void);
-    int getID();
-    string toString() const;
-	
+        int getID();
+	//string getTitle();
+	//string getComposer();
+        string toString() const;
+
 	private:
 	string title;
 	string composer;
