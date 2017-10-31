@@ -17,11 +17,11 @@ vector<Playlist*>::iterator Playlists::findPosition(Playlist & aPlaylist){
 		if(*it == &aPlaylist) return it;
 	return collection.end();
 }
-Playlist * Playlists::findByID(int anID){
+/*Playlist * Playlists::findByID(int anID){
 	for (vector<Playlist*>::iterator it = collection.begin() ; it != collection.end(); ++it)
 		if((*it)->getID() == anID) return *it;
 	return NULL;
-}
+}*/
 void Playlists::add(Playlist & aPlaylist){
 	collection.push_back(&aPlaylist);
 }
