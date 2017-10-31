@@ -8,12 +8,12 @@ using namespace std;
 //#include "UI.h"
 #include "user.h"
 
-class Playlists {
+class Users {
   
 	public:
 	Users(); 
 	~Users(void);
-	Users * findByID(int aUserID);
+	User * findByID(int aUserID);
         void add(User & aUser);
 	void remove(User & aUser);
 	//void showOn(UI & aView) const;
