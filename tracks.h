@@ -1,3 +1,6 @@
+#ifndef _TRACKS_H
+#define _TRACKS_H
+
 #include <vector>
 #include <string>
 using namespace std;
