@@ -3,8 +3,8 @@
 #include <vector>
 using namespace std;
 
-#include "songs.h"
-#include "song.h"
+#include "recording.h"
+#include "recordings.h"
 
 Recordings::Recordings(){
 }
