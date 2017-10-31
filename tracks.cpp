@@ -10,11 +10,11 @@ Tracks::Tracks(){
 }
 Tracks::~Tracks(void){
 	for(vector<Track*>::size_type i=0; i<collection.size(); i++)
-		delete collection[i]; //delete songs in this container
+		delete collection[i]; //delete tracks in this container
 }
 vector<Track*>::iterator Tracks::findPosition(Track & aTrack){
 	for (vector<Track*>::iterator it = collection.begin() ; it != collection.end(); ++it)
-		if(*it == &aTrack) return it;
+	if(*it == &aTrack) return it;
 	return collection.end();
 }
 Track * Tracks::findByID(int anID){
@@ -47,7 +47,7 @@ void Tracks::printOn(ostream & out) const {
        cout << (*collection[i]).toString() << endl;	  
 }
 
-ostream & operator<<(ostream & out, const Songs & songs){
-  songs.printOn(out);
+ostream & operator<<(ostream & out, const Tracks & tracks){
+  tracks.printOn(out);
   return out;
 }
