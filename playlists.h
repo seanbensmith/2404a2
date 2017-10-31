@@ -13,7 +13,7 @@ class Playlists {
 	public:
 	Playlists(); 
 	~Playlists(void);
-	Playlists * findByID(int anID);
+	//Playlists * findByID(int anID);
 	void add(Playlist & aPlaylist);
 	void remove(Playlist & aPlaylist);
 	//void showOn(UI & aView) const;
