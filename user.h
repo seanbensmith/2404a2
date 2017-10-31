@@ -9,7 +9,8 @@ class User {
 	User represents a user of the application
 	*/
 	public:
-        User(const int aUserID = -1, const string & aName,);
+        User(  const int aUserID = -1, const string & aName = "name"); //why aUserID = -1
+	
 	~User(void);
     	int getID();
     	string toString() const;
@@ -19,6 +20,6 @@ class User {
 	int userID;
 };
 
-ostream & operator<<(ostream & out, const Song & aUser);
+ostream & operator<<(ostream & out, const User & aUser);
 
 #endif
