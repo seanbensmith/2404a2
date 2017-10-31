@@ -14,11 +14,14 @@ Track::~Track(){
 }
 int Track::getID(){return id;}
 
+//string Track::getFile(){return file;}
+
 string Track::toString()const{
-	return to_string(id) + " " + mp3_file;
+        std::string IDstr = std::to_string(id);
+	return IDstr + " " + mp3_file;
 }
 
 ostream & operator<<(ostream & out, const Track & aTrack){
-	out << aRecording.toString() << endl;
+	out << aTrack.toString() << endl;
 	return out;
 }
