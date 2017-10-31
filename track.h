@@ -11,8 +11,9 @@ class Track {
 	public:
 	Track(const string & anMP3_file, const int anId = -1);
 	~Track(void);
-    int getID();
-    string toString() const;
+	int getID();
+	//string getFile();
+	string toString() const;
 	
 	private:
 	string mp3_file;
