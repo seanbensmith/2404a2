@@ -19,6 +19,6 @@ class Playlist {
 	int id;
 };
 
-ostream & operator<<(ostream & out, const Song & aPlaylist);
+ostream & operator<<(ostream & out, const Playlist & aPlaylist);
 
 #endif
