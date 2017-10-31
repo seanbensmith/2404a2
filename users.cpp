@@ -13,12 +13,12 @@ Users::~Users(void){
 		delete collection[i]; //delete playlists in this container
 }
 vector<User*>::iterator Users::findPosition(User & aUser){
-	for (vector User*>::iterator it = collection.begin() ; it != collection.end(); ++it)
+	for (vector <User*>::iterator it = collection.begin() ; it != collection.end(); ++it)
 		if(*it == &aUser) return it;
 	return collection.end();
 }
 User * Users::findByID(int aUserID){
-	for (vector<Playlist*>::iterator it = collection.begin() ; it != collection.end(); ++it)
+	for (vector<User*>::iterator it = collection.begin() ; it != collection.end(); ++it)
 		if((*it)->getID() == aUserID) return *it;
 	return NULL;
 }
